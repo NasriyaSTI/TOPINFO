@@ -1,0 +1,338 @@
+h1 {
+  color:darkblue;
+ text-align: center;
+  font-family:Arial, Helvetica, sans-serif;
+ 
+ font-size: x-large;
+ font-weight:bold;
+  /*text-shadow: 5px 5px 4px rgba(165, 77, 36, 0.863);*/
+}
+#top{
+  transform:skewY(10deg);
+}
+
+h2 {
+  color: firebrick;
+  font-size: x-large;
+  font-style:italic;
+  margin-top:0px;
+}
+p { 
+  text-align: justify;
+  font-size: large;
+}
+#gratuit {
+  color:red;
+  font-style: italic;
+}
+#tel {
+color:green;
+font-weight:900;
+}
+strong {
+  font-weight: bold;
+}
+em {
+  font-style: italic;
+}
+/**** 1er méthode ecntrer des balises in ligne en mettant dans div puis centre le div text-align=centre****/
+/*.centre {
+  text-align: center;
+}*/
+/*2eme méthode
+/* centre des balises de type inline */
+.centre{
+  margin:0 auto; /* margin-top:0; margin-bottom:0;margin-left: auto; margin-right: auto;*/
+  display: block;
+  
+}
+
+ol {
+  list-style-type:upper-roman;
+}
+ul.image {
+
+  list-style-image:url("media/f.png");
+  
+}
+table {
+  border-collapse:collapse;
+ margin-left: auto;
+  margin-right: auto;
+ 
+  background-color: #DBE5F1;
+  text-align: center;
+  font-size: large;
+}
+td, th   {
+  border: 2px solid #4F81BD;
+
+}
+caption{
+  background-color:#4F81BD;
+  color:white;
+  font-size: large;
+  font-weight: bold;
+  padding-top:4px;
+  padding-bottom: 4px;
+}
+.produit {
+  width: 110px;
+  height: 70px;
+  transition: 2s;
+
+}
+.produit:hover{
+  transform: scale(3) rotate(360deg);
+ 
+}
+
+
+hr {
+  /*background-color: darkorchid;
+  height: 2px;*/
+  border-width: 1px ;
+  border-style:solid;
+  border-color:blueviolet;
+  width:70%;
+  
+}
+tr:hover
+{background-color: lightskyblue;}
+/*#ligne {
+  background-color:blueviolet;
+ /* margin-top: 20px;
+  /*width: 70%;
+  height: 2px;
+}*/
+
+
+
+
+/* mouse over link */
+/*a:hover {
+  color: hotpink;
+}
+*/
+/* selected link */
+/*a:active {
+  color: rgb(0, 255, 242);
+}*/
+legend {
+  font-style: italic;
+  font-weight: bold;
+  font-size: x-large;
+  color:red;
+}
+fieldset{
+  border: 2px solid red;
+   margin:0px 15px 20px ; /*haut -droite gauche-bas*/
+}
+.col-25 {
+  display:inline-block;
+  width: 21%;
+  font-weight: 700;
+  font-size: large;
+  margin-left: 10px;
+}
+label span {
+  font-size: x-small;
+}
+form {
+  background-color:#FAFAFA;
+  padding-left:30px;
+
+  }
+  input[type=submit],  input[type=reset]{
+    width: 150px;
+    font-weight:bold;
+    padding: 8px;
+  }
+  input.saisie{
+    color:blue;
+    border-color: blue;
+  width:150px;
+  }
+/*centre des balises de type block*/
+div.centreblock{
+  text-align: center;
+  padding:10px
+  }
+header,footer {
+  background-color: rgba(197, 108, 96, 0.479); 
+  text-align: center;
+}
+#entete{
+  color: darkblue;
+  font-size: xx-large;
+  font-family: Arial;
+  margin:0px;
+  padding:10px;
+  text-shadow: 1px 1px 5px blue;
+  text-transform: uppercase;
+  transition-property:  font-size;
+  transition-duration: 3s;
+  /*text-shadow: 5px 5px 4px rgba(165, 77, 36, 0.863);*/
+}
+#entete:hover{
+ /*color:red;*/
+  font-size:56px;
+ 
+
+}
+
+
+/*
+header img {
+  width: 90px;
+  height: 60px;
+  float: right;
+  padding-right: 10px;
+  padding-top: 5px;
+}*/
+nav {
+  background-color: #c00;
+  /*width:15%;*/
+ 
+}
+nav ul{
+  /*list-style-type: none;
+  list-style-image: none;*/
+  padding-left: 0px; /* enlever les puces*/
+  margin-top:0px;
+
+  }
+nav li{
+ 
+ 
+ 
+ /* transition: all 5s 205ms;*/
+  
+  
+}
+nav a{ 
+  border: 2px solid #600;
+  border-radius: 10px;
+ display: block;
+  text-decoration:none;
+  font-size:large;
+  font-weight: bolder;
+  color: #fff;
+  padding: 15px;
+  text-align: center;
+  transition-duration: 3s;
+  transition-delay: 205ms;
+  transition-property: color,  background-color;
+}
+.principal{
+  display:flex;
+}
+section{
+ width:100%;
+ height: 800px;
+}
+iframe{width: 100%;
+height: 100%;}
+
+ 
+#logo {
+  width: 30px;
+  height: 35px;
+  margin-top: 5px;
+}
+
+footer h4{
+  font-style: italic;
+  padding-top: 12px;
+  padding-bottom: 8px;
+  margin:0px;
+
+  
+
+ /* text-align: center;*/
+  
+}
+/*footer strong {
+  position: absolute;
+  padding-top: 15px;
+}*/
+footer a {
+  font-weight: bold;
+  color:darkblue;
+  display:inline-block;
+  padding-bottom: 8px;
+
+}
+nav a:hover{
+  background-color: darkred;
+  color:yellow;
+
+ 
+  
+ }
+a:visited{
+ /* color:rgba(217, 166, 26, 0.539);*/
+}
+
+ 
+summary,.titadr{
+  margin-top: 25px;
+  margin-bottom: 4px;
+  color:mediumblue;
+  font-weight: bold;
+  font-size: large;
+}
+ address{
+  margin-left: 15px;
+  font-size: large;
+}
+.jour{
+  margin:5px
+}
+.zone1{
+  width:20%;
+ 
+}
+.zone2{
+  width:50%;
+  
+}
+.zone3{
+  width:30%;
+ 
+}
+#titre2{
+  transform: translate(-370px,15px);
+}
+.saisie:focus
+{
+width: 300px;
+transition: width 4s;
+}
+#titre3{
+  transition : all 2s 300ms;
+  }
+#titre3:hover{
+transform:translateX(400px);
+color:red;
+}
+#titre4:hover{
+  transition :all 5s;
+  }
+#titre4:hover{
+  transform:rotate(1080deg);
+  color:rgb(94, 85, 85)
+  }
+  input[type="reset"],input[type="reset"],
+input[type="submit"],input[type="submit"]{
+  
+transition :all 1.5s;
+
+  }
+input[type="reset"]:hover,input[type="reset"]:focus,
+input[type="submit"]:hover,input[type="submit"]:focus{
+background-color:darkred;
+color:white;
+box-shadow:2px 5px 4px darkred;
+
+  }

@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="fr">
+
+<head>
+  <meta charset="utf-8" >
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+  <TITLE> inscription</TITLE>
+  <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+  <h1 id="titre3">INSCRIPTION </h1>
+
+  <form id="f" name="f" method="GET" action="valide.html">
+
+
+    <fieldset>
+      <legend>données de connexion</legend>
+      <label for="email" class="col-25" >mail: </label>
+      <input type="email" id="email" class="saisie" placeholder="use@exemple.com" required > <br > <br>
+      <label for="pw" class="col-25">mot de passe: <span>(min 4 caractères) </span></label>
+      <input type="password" id="pw" name="pw" required minlength="3" > <input type="button" value="voir MP"><br >
+
+    </fieldset>
+
+    <fieldset>
+      <legend>données personnelles</legend>
+      <label for="pre" class="col-25">prénom: </label>
+      <input type="text" id="pre" name="prenom" class="saisie" > <br > <br>
+      <label for="nom" class="col-25">nom: </label>
+      <input type="text" name="nom" id='nom' class="saisie" > <br><br>
+      <label class="col-25">Titre :</label>
+      <input type="radio" name="genre" value="H" id='r1'><label for="r1">homme</label>
+      <input type="radio" name="genre" id='r2' value="F"><label for="r2">femme</label>
+      <br><br>
+      <label class="col-25"> Logement</label> <input type="radio" name="nat" value="T" id="r3" checked>
+      <label for="r3"> en Tunisie </label>
+      <input type="radio" name="nat" id="r4" value="E"> <label for="r4"> à l'étranger</label>
+    <br > <br>
+      <label for="date" class="col-25">date de naissance : </label> <input type="date" name="date" id="date" >
+      <br> <br>
+      <label for="cp" class="col-25"> Code postal : </label> 
+      <input type="number" id="cp" name="cp" min=1000 max=9999 class="saisie" >
+      <br><br>
+      <label for="ville" class="col-25">Ville :</label>
+      <select name="ville" id="ville">
+        <option>Sélectionner une ville</option>
+        <option value="1">Tunis</option>
+        <option value="2">Sousse</option>
+        <option value="3" selected>Sfax</option>
+        <option value="4">Gabes</option>
+      </select>
+      <br ><br >
+      <label class="col-25">Type de carte : </label>
+      <label for="c1">Visa</label> <input type="checkbox" name="c1" id="c1" checked > 
+   
+      <label for="c2">Mastercard</label><input type="checkbox" name="c2" id="c2">
+
+      <br><br>
+      <label for="req" class="col-25">vos remarques : </label><br >
+      <textarea name="req" id="req" rows="4" cols="50"> </textarea>
+    </fieldset>
+
+    <br>
+    <div class="centreblock">
+
+      <input type="submit" value="Envoyer" name="b1" id="envoyer" >
+      <input type="reset" value="Annuler" name="b2" >
+    </div>
+    <a href="#f">vers le haut</a>
+  </form>
+ 
+
+  
+</body>
+
+</html>
